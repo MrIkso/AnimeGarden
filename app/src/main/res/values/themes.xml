@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.AnimeGarden" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#4258BF</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Fix CollapsingToolbar with theme material3 -->
+        <item name="collapsingToolbarLayoutStyle">@style/Widget.App.CollapsingToolbar</item>
+    </style>
+
+    <style name="Theme.AnimeGarden.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AnimeGarden.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Widget.App.CollapsingToolbar" parent="Widget.Material3.CollapsingToolbar">
+        <item name="forceApplySystemWindowInsetTop">false</item>
+    </style>
+
+    <style name="Theme.AnimeGarden.ToolbarTitle">
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:textSize">@dimen/ui_font_22</item>
+    </style>
+
+    <style name="Theme.AnimeGarden.ExpandTitle">
+        <item name="android:fontFamily">@font/font</item>
+        <item name="android:textSize">@dimen/ui_font_22</item>
+    </style>
+
+    <style name="Theme.AnimeGarden.SearchHintTextStyle">
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="Theme.AnimeGarden.CornerSmall">
+        <item name="cornerFamily">?attr/shapeCornerFamily</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+</resources>

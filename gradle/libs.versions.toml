@@ -1,0 +1,41 @@
+[versions]
+agp = "8.3.0-alpha14"
+blueprint = "1.1.30"
+fragmentKtx = "1.6.2"
+kotlin = "1.9.0"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+kspVersion = "4.15.1"
+lottieVersion = "6.1.0"
+material = "1.10.0"
+constraintlayout = "2.1.4"
+activity = "1.8.1"
+swiperefreshlayout = "1.1.0"
+touchimageview = "3.2.1"
+ksp = "1.9.0-1.0.11"
+
+[libraries]
+android-lottie = { module = "com.airbnb.android:lottie", version.ref = "lottieVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
+blueprint = { module = "io.github.xiaoyvyv:blueprint", version.ref = "blueprint" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "kspVersion" }
+glide-ksp = { module = "com.github.bumptech.glide:ksp", version.ref = "kspVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+touch-image-view = { module = "com.github.MikeOrtiz:TouchImageView", version.ref = "touchimageview" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+googleKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>动漫花园</title>
+    <style>
+        html, body {
+            margin: 0;
+            font-size: 16px !important;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box !important;
+        }
+
+        #container {
+            height: auto;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            padding: 12px 16px;
+        }
+
+        img {
+            max-width: 100% !important;
+            height: auto;
+            margin: 6px 0;
+            border-radius: 6px;
+        }
+
+        .placeholder {
+            background-color: #ccc;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">HTML_CONTENT</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 获取所有的 img 元素
+        var images = document.querySelectorAll('img');
+
+        // 为每个 img 元素设置 onerror 事件
+        images.forEach(function (img) {
+            img.onerror = function () {
+                replaceWithPlaceholder(img);
+            };
+        });
+    });
+
+    // 替换图像链接为占位图的链接
+    function replaceWithPlaceholder(img) {
+        img.src = 'placeholder.jpg';
+        // 隐藏 alt 文本，如果需要的话
+        img.alt = '';
+        // 添加占位图的样式类
+        img.classList.add('placeholder');
+    }
+</script>
+</body>
+</html>

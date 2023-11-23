@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/ui_size_60"
+            android:layout_height="@dimen/ui_size_60"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_title_anime"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie/lottie_logo.json"
+            app:lottie_loop="true" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_anime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ui_size_6"
+            android:fontFamily="@font/font"
+            android:paddingVertical="@dimen/ui_size_4"
+            android:text="@string/main_title_anime"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="@dimen/ui_font_30"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+            app:layout_constraintEnd_toStartOf="@+id/tv_title_garden"
+            app:layout_constraintStart_toEndOf="@+id/iv_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_garden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:paddingHorizontal="@dimen/ui_size_6"
+            android:text="@string/main_title_garden"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="@dimen/ui_font_16"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_title_anime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_title_anime" />
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/sb_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ui_size_40"
+            android:hint="@string/main_search_hint"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo"
+            app:navigationIcon="@drawable/ic_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_func"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ui_size_32"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingVertical="@dimen/ui_size_20"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/sb_search"
+            app:spanCount="4"
+            tools:listitem="@layout/activity_main_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

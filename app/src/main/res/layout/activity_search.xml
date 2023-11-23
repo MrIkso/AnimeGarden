@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurfaceVariant"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurfaceVariant"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Search"
+            app:titleTextAppearance="@style/Theme.AnimeGarden.ToolbarTitle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ui_size_16">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_size_44"
+                android:layout_marginEnd="@dimen/ui_size_56"
+                android:background="@drawable/ui_shape_rectangle_corner_6"
+                android:backgroundTint="?attr/colorOnSurfaceInverse"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="@dimen/ui_size_40"
+                android:paddingEnd="@dimen/ui_size_16"
+                app:layout_constraintBottom_toTopOf="@+id/rv_options"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginBottom="@dimen/ui_size_8"
+                tools:hint="Search" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/ui_size_16"
+                android:layout_height="@dimen/ui_size_16"
+                android:layout_marginStart="@dimen/ui_size_12"
+                app:layout_constraintBottom_toBottomOf="@+id/et_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_name"
+                app:srcCompat="@drawable/ic_search" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_advance"
+                android:layout_width="@dimen/ui_size_44"
+                android:layout_height="@dimen/ui_size_44"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/selector_btn_advance"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="@dimen/ui_size_12"
+                app:layout_constraintBottom_toBottomOf="@+id/et_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_name"
+                app:srcCompat="@drawable/ic_setting"
+                app:tint="?attr/colorSecondary" />
+
+            <com.xiaoyv.anime.garden.view.SearchOptionView
+                android:id="@+id/rv_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/ui_size_16"
+                android:paddingBottom="@dimen/ui_size_8"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_name"
+                tools:itemCount="4"
+                tools:listitem="@layout/view_option_item"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/ui_size_8"
+            tools:itemCount="10"
+            tools:listitem="@layout/view_magnet_item" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

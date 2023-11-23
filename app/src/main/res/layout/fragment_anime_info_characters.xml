@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/ui_layout_margin"
+    android:layout_marginVertical="@dimen/ui_size_6"
+    android:background="@drawable/ui_shape_rectangle_corner_6"
+    android:backgroundTint="?attr/colorOnSurfaceInverse"
+    tools:ignore="RtlSymmetry">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_character"
+        android:layout_width="@dimen/ui_size_80"
+        android:layout_height="@dimen/ui_size_120"
+        android:background="@color/ui_system_c4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/Theme.AnimeGarden.CornerSmall" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_av"
+        android:layout_width="@dimen/ui_size_80"
+        android:layout_height="@dimen/ui_size_120"
+        android:background="@color/ui_system_c4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/Theme.AnimeGarden.CornerSmall" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_character_title"
+        android:layout_width="@dimen/ui_size_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_size_12"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingStart="@dimen/ui_size_12"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_av_title"
+        app:layout_constraintStart_toEndOf="@+id/iv_character"
+        app:layout_constraintTop_toTopOf="@+id/iv_character"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_character_desc"
+        android:layout_width="@dimen/ui_size_0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ui_size_12"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingStart="@dimen/ui_size_12"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_character"
+        app:layout_constraintEnd_toStartOf="@+id/tv_av_desc"
+        app:layout_constraintStart_toEndOf="@+id/iv_character"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_av_title"
+        android:layout_width="@dimen/ui_size_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_size_12"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/ui_size_12"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?attr/colorPrimaryVariant"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/iv_av"
+        app:layout_constraintStart_toEndOf="@+id/tv_character_title"
+        app:layout_constraintTop_toTopOf="@+id/iv_av"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_av_desc"
+        android:layout_width="@dimen/ui_size_0"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ui_size_12"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/ui_size_12"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_av"
+        app:layout_constraintEnd_toStartOf="@+id/iv_av"
+        app:layout_constraintStart_toEndOf="@id/tv_character_desc"
+        tools:text="@tools:sample/lorem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

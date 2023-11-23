@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_value_anime_genre">
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Ecchi</item>
+        <item>Fantasy</item>
+        <item>Horror</item>
+        <item>Mahou Shoujo</item>
+        <item>Mecha</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Psychological</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>Slice of Life</item>
+        <item>Sports</item>
+        <item>Supernatural</item>
+        <item>Thriller</item>
+        <item>4-koma</item>
+        <item>Achromatic</item>
+        <item>Achronological Order</item>
+        <item>Acting</item>
+        <item>Adoption</item>
+        <item>Advertisement</item>
+        <item>Afterlife</item>
+        <item>Age Gap</item>
+        <item>Age Regression</item>
+        <item>Agender</item>
+        <item>Agriculture</item>
+        <item>Airsoft</item>
+        <item>Alchemy</item>
+        <item>Aliens</item>
+        <item>Alternate Universe</item>
+        <item>American Football</item>
+        <item>Amnesia</item>
+        <item>Anachronism</item>
+        <item>Angels</item>
+        <item>Animals</item>
+        <item>Anthology</item>
+        <item>Anthropomorphism</item>
+        <item>Anti-Hero</item>
+        <item>Archery</item>
+        <item>Artificial Intelligence</item>
+        <item>Asexual</item>
+        <item>Assassins</item>
+        <item>Astronomy</item>
+        <item>Athletics</item>
+        <item>Augmented Reality</item>
+        <item>Autobiographical</item>
+        <item>Aviation</item>
+        <item>Badminton</item>
+        <item>Band</item>
+        <item>Bar</item>
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Battle Royale</item>
+        <item>Biographical</item>
+        <item>Bisexual</item>
+        <item>Body Horror</item>
+        <item>Body Swapping</item>
+        <item>Boxing</item>
+        <item>Boys\' Love</item>
+        <item>Bullying</item>
+        <item>Butler</item>
+        <item>Calligraphy</item>
+        <item>Cannibalism</item>
+        <item>Card Battle</item>
+        <item>Cars</item>
+        <item>Centaur</item>
+        <item>CGI</item>
+        <item>Cheerleading</item>
+        <item>Chibi</item>
+        <item>Chimera</item>
+        <item>Chuunibyou</item>
+        <item>Circus</item>
+        <item>Classic Literature</item>
+        <item>Clone</item>
+        <item>College</item>
+        <item>Coming of Age</item>
+        <item>Conspiracy</item>
+        <item>Cosmic Horror</item>
+        <item>Cosplay</item>
+        <item>Crime</item>
+        <item>Crossdressing</item>
+        <item>Crossover</item>
+        <item>Cult</item>
+        <item>Cultivation</item>
+        <item>Cute Boys Doing Cute Things</item>
+        <item>Cute Girls Doing Cute Things</item>
+        <item>Cyberpunk</item>
+        <item>Cyborg</item>
+        <item>Cycling</item>
+        <item>Dancing</item>
+        <item>Death Game</item>
+        <item>Delinquents</item>
+        <item>Demons</item>
+        <item>Denpa</item>
+        <item>Desert</item>
+        <item>Detective</item>
+        <item>Dinosaurs</item>
+        <item>Disability</item>
+        <item>Dissociative Identities</item>
+        <item>Dragons</item>
+        <item>Drawing</item>
+        <item>Drugs</item>
+        <item>Dullahan</item>
+        <item>Dungeon</item>
+        <item>Dystopian</item>
+        <item>E-Sports</item>
+        <item>Economics</item>
+        <item>Educational</item>
+        <item>Elf</item>
+        <item>Ensemble Cast</item>
+        <item>Environmental</item>
+        <item>Episodic</item>
+        <item>Ero Guro</item>
+        <item>Espionage</item>
+        <item>Fairy</item>
+        <item>Fairy Tale</item>
+        <item>Family Life</item>
+        <item>Fashion</item>
+        <item>Female Harem</item>
+        <item>Female Protagonist</item>
+        <item>Femboy</item>
+        <item>Fencing</item>
+        <item>Firefighters</item>
+        <item>Fishing</item>
+        <item>Fitness</item>
+        <item>Flash</item>
+        <item>Food</item>
+        <item>Football</item>
+        <item>Foreign</item>
+        <item>Found Family</item>
+        <item>Fugitive</item>
+        <item>Full CGI</item>
+        <item>Full Color</item>
+        <item>Gambling</item>
+        <item>Gangs</item>
+        <item>Gender Bending</item>
+        <item>Ghost</item>
+        <item>Go</item>
+        <item>Goblin</item>
+        <item>Gods</item>
+        <item>Golf</item>
+        <item>Gore</item>
+        <item>Guns</item>
+        <item>Gyaru</item>
+        <item>Handball</item>
+        <item>Henshin</item>
+        <item>Heterosexual</item>
+        <item>Hikikomori</item>
+        <item>Historical</item>
+        <item>Homeless</item>
+        <item>Ice Skating</item>
+        <item>Idol</item>
+        <item>Isekai</item>
+        <item>Iyashikei</item>
+        <item>Josei</item>
+        <item>Judo</item>
+        <item>Kaiju</item>
+        <item>Karuta</item>
+        <item>Kemonomimi</item>
+        <item>Kids</item>
+        <item>Kuudere</item>
+        <item>Lacrosse</item>
+        <item>Language Barrier</item>
+        <item>LGBTQ+ Themes</item>
+        <item>Lost Civilization</item>
+        <item>Love Triangle</item>
+        <item>Mafia</item>
+        <item>Magic</item>
+        <item>Mahjong</item>
+        <item>Maids</item>
+        <item>Makeup</item>
+        <item>Male Harem</item>
+        <item>Male Protagonist</item>
+        <item>Marriage</item>
+        <item>Martial Arts</item>
+        <item>Medicine</item>
+        <item>Memory Manipulation</item>
+        <item>Mermaid</item>
+        <item>Meta</item>
+        <item>Military</item>
+        <item>Mixed Gender Harem</item>
+        <item>Monster Boy</item>
+        <item>Monster Girl</item>
+        <item>Mopeds</item>
+        <item>Motorcycles</item>
+        <item>Musical</item>
+        <item>Mythology</item>
+        <item>Necromancy</item>
+        <item>Nekomimi</item>
+        <item>Ninja</item>
+        <item>No Dialogue</item>
+        <item>Noir</item>
+        <item>Non-fiction</item>
+        <item>Nudity</item>
+        <item>Nun</item>
+        <item>Office Lady</item>
+        <item>Oiran</item>
+        <item>Ojou-sama</item>
+        <item>Orphan</item>
+        <item>Otaku Culture</item>
+        <item>Outdoor</item>
+        <item>Pandemic</item>
+        <item>Parkour</item>
+        <item>Parody</item>
+        <item>Philosophy</item>
+        <item>Photography</item>
+        <item>Pirates</item>
+        <item>Poker</item>
+        <item>Police</item>
+        <item>Politics</item>
+        <item>Post-Apocalyptic</item>
+        <item>POV</item>
+        <item>Primarily Adult Cast</item>
+        <item>Primarily Child Cast</item>
+        <item>Primarily Female Cast</item>
+        <item>Primarily Male Cast</item>
+        <item>Primarily Teen Cast</item>
+        <item>Prison</item>
+        <item>Puppetry</item>
+        <item>Rakugo</item>
+        <item>Real Robot</item>
+        <item>Rehabilitation</item>
+        <item>Reincarnation</item>
+        <item>Religion</item>
+        <item>Revenge</item>
+        <item>Robots</item>
+        <item>Rotoscoping</item>
+        <item>Rugby</item>
+        <item>Rural</item>
+        <item>Samurai</item>
+        <item>Satire</item>
+        <item>School</item>
+        <item>School Club</item>
+        <item>Scuba Diving</item>
+        <item>Seinen</item>
+        <item>Shapeshifting</item>
+        <item>Ships</item>
+        <item>Shogi</item>
+        <item>Shoujo</item>
+        <item>Shounen</item>
+        <item>Shrine Maiden</item>
+        <item>Skateboarding</item>
+        <item>Skeleton</item>
+        <item>Slapstick</item>
+        <item>Slavery</item>
+        <item>Software Development</item>
+        <item>Space</item>
+        <item>Space Opera</item>
+        <item>Spearplay</item>
+        <item>Steampunk</item>
+        <item>Stop Motion</item>
+        <item>Succubus</item>
+        <item>Suicide</item>
+        <item>Sumo</item>
+        <item>Super Power</item>
+        <item>Super Robot</item>
+        <item>Superhero</item>
+        <item>Surfing</item>
+        <item>Surreal Comedy</item>
+        <item>Survival</item>
+        <item>Swimming</item>
+        <item>Swordplay</item>
+        <item>Table Tennis</item>
+        <item>Tanks</item>
+        <item>Tanned Skin</item>
+        <item>Teacher</item>
+        <item>Teens\' Love</item>
+        <item>Tennis</item>
+        <item>Terrorism</item>
+        <item>Time Manipulation</item>
+        <item>Time Skip</item>
+        <item>Tokusatsu</item>
+        <item>Tomboy</item>
+        <item>Torture</item>
+        <item>Tragedy</item>
+        <item>Trains</item>
+        <item>Transgender</item>
+        <item>Travel</item>
+        <item>Triads</item>
+        <item>Tsundere</item>
+        <item>Twins</item>
+        <item>Urban</item>
+        <item>Urban Fantasy</item>
+        <item>Vampire</item>
+        <item>Video Games</item>
+        <item>Vikings</item>
+        <item>Villainess</item>
+        <item>Virtual World</item>
+        <item>Volleyball</item>
+        <item>VTuber</item>
+        <item>War</item>
+        <item>Werewolf</item>
+        <item>Witch</item>
+        <item>Work</item>
+        <item>Wrestling</item>
+        <item>Writing</item>
+        <item>Wuxia</item>
+        <item>Yakuza</item>
+        <item>Yandere</item>
+        <item>Youkai</item>
+        <item>Yuri</item>
+        <item>Zombie</item>
+    </string-array>
+
+    <string-array name="array_value_anime_season">
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Fall</item>
+    </string-array>
+    <string-array name="array_option_value_season" translatable="false">
+        <item>WINTER</item>
+        <item>SPRING</item>
+        <item>SUMMER</item>
+        <item>FALL</item>
+    </string-array>
+
+    <string-array name="array_value_anime_format">
+        <item>TV Show</item>
+        <item>Movie</item>
+        <item>TV Short</item>
+        <item>Special</item>
+        <item>OVA</item>
+        <item>ONA</item>
+        <item>Music</item>
+    </string-array>
+    <string-array name="array_option_value_format" translatable="false">
+        <item>TV</item>
+        <item>MOVIE</item>
+        <item>TV_SHORT</item>
+        <item>SPECIAL</item>
+        <item>OVA</item>
+        <item>ONA</item>
+        <item>MUSIC</item>
+    </string-array>
+
+    <string-array name="array_value_anime_sort">
+        <item>Title</item>
+        <item>Popularity</item>
+        <item>Average Score</item>
+        <item>Trending</item>
+        <item>Favorites</item>
+        <item>Date Added</item>
+        <item>Release Date</item>
+    </string-array>
+    <string-array name="array_option_value_sort" translatable="false">
+        <item>TITLE_ROMAJI</item>
+        <item>POPULARITY_DESC</item>
+        <item>SCORE_DESC</item>
+        <item>TRENDING_DESC</item>
+        <item>FAVOURITES_DESC</item>
+        <item>ID_DESC</item>
+        <item>START_DATE_DESC</item>
+    </string-array>
+
+    <string-array name="array_value_anime_airing_status">
+        <item>Airing</item>
+        <item>Finished</item>
+        <item>Not Yet Aired</item>
+        <item>Cancelled</item>
+    </string-array>
+    <string-array name="array_option_value_status" translatable="false">
+        <item>RELEASING</item>
+        <item>FINISHED</item>
+        <item>NOT_YET_RELEASED</item>
+        <item>CANCELLED</item>
+    </string-array>
+
+    <string-array name="array_value_anime_streaming_on">
+        <item>Crunchyroll</item>
+        <item>Hulu</item>
+        <item>Funimation</item>
+        <item>Netflix</item>
+        <item>YouTube</item>
+        <item>HIDIVE</item>
+        <item>Amazon Prime Video</item>
+        <item>Vimeo</item>
+        <item>HBO Max</item>
+        <item>Wakanim</item>
+        <item>RetroCrush</item>
+        <item>Adult Swim</item>
+        <item>Japanese Film Archives</item>
+        <item>Tubi TV</item>
+        <item>Crackle</item>
+        <item>AsianCrush</item>
+        <item>Midnight Pulp</item>
+        <item>CONtv</item>
+        <item>Fakku</item>
+        <item>Bilibili</item>
+        <item>Disney Plus</item>
+        <item>Bilibili TV</item>
+        <item>Tencent Video</item>
+        <item>iQ</item>
+        <item>Youku</item>
+        <item>WeTV</item>
+        <item>Niconico Video</item>
+        <item>Rooster Teeth</item>
+        <item>iQIYI</item>
+        <item>Star+</item>
+        <item>Max</item>
+        <item>Viki</item>
+        <item>Cineverse</item>
+        <item>Youku TV</item>
+    </string-array>
+
+    <string-array name="array_value_anime_country_of_origin">
+        <item>Japan</item>
+        <item>South Korea</item>
+        <item>China</item>
+        <item>China - Taiwan</item>
+    </string-array>
+    <string-array name="array_option_value_country_of_origin" translatable="false">
+        <item>JP</item>
+        <item>KR</item>
+        <item>CN</item>
+        <item>TW</item>
+    </string-array>
+
+    <string-array name="array_value_anime_source_material">
+        <item>Original</item>
+        <item>Manga</item>
+        <item>Light Novel</item>
+        <item>Web Novel</item>
+        <item>Novel</item>
+        <item>Anime</item>
+        <item>Visual Novel</item>
+        <item>Video Game</item>
+        <item>Doujinshi</item>
+        <item>Comic</item>
+        <item>Live Action</item>
+        <item>Game</item>
+        <item>Multimedia Project</item>
+        <item>Picture Book</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="array_option_value_source_material" translatable="false">
+        <item>ORIGINAL</item>
+        <item>MANGA</item>
+        <item>LIGHT_NOVEL</item>
+        <item>WEB_NOVEL</item>
+        <item>NOVEL</item>
+        <item>ANIME</item>
+        <item>VISUAL_NOVEL</item>
+        <item>VIDEO_GAME</item>
+        <item>DOUJINSHI</item>
+        <item>COMIC</item>
+        <item>LIVE_ACTION</item>
+        <item>GAME</item>
+        <item>MULTIMEDIA_PROJECT</item>
+        <item>PICTURE_BOOK</item>
+        <item>OTHER</item>
+    </string-array>
+</resources>

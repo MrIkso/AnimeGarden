@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">动漫资源</string>
+
+    <string name="main_title_anime">动漫</string>
+    <string name="main_title_garden">花园</string>
+    <string name="main_search_hint">轻触搜索动漫资源</string>
+    <string name="anime_detail_title">动漫详情</string>
+
+    <string name="anime_type_all">全部</string>
+    <string name="anime_type_animation">动画</string>
+    <string name="anime_type_season_full_set">季度全集</string>
+    <string name="anime_type_comic">漫画</string>
+    <string name="anime_type_hk_taiwan_original">港台原版</string>
+    <string name="anime_type_japanese_original">日文原版</string>
+    <string name="anime_type_music">音乐</string>
+    <string name="anime_type_animation_music">动漫音乐</string>
+    <string name="anime_type_fandom_music">同人音乐</string>
+    <string name="anime_type_popular_music">流行音乐</string>
+    <string name="anime_type_japanese_drama">日剧</string>
+    <string name="anime_type_raw">RAW</string>
+    <string name="anime_type_game">游戏</string>
+    <string name="anime_type_computer_game">电脑游戏</string>
+    <string name="anime_type_tv_game">电视游戏</string>
+    <string name="anime_type_handheld_game">掌机游戏</string>
+    <string name="anime_type_online_game">网络游戏</string>
+    <string name="anime_type_game_peripheral">游戏周边</string>
+    <string name="anime_type_special">特摄</string>
+    <string name="anime_type_other">其他</string>
+
+    <string name="magnet_sort_date_desc">发布时间-倒序</string>
+    <string name="magnet_sort_date_asc">发布时间-正序</string>
+    <string name="magnet_sort_rel">相关度</string>
+
+    <string name="anime_search_title">番剧截图搜索出处</string>
+    <string name="anime_search_desc">选取番剧原始比例截图搜索来源</string>
+    <string name="anime_search_subtitle">上传番剧截取图片</string>
+    <string name="anime_search_upload_image">上传番剧截图</string>
+    <string name="anime_search_upload_limit">文件大小限制为 25MB</string>
+    <string name="anime_search_upload_btn">点击上传</string>
+    <string name="anime_search_result_title">番剧来源搜索结果</string>
+
+    <string name="anime_character_title">动漫图片人物识别</string>
+    <string name="anime_character_subtitle">上传动漫人物图片，以人物正脸最佳</string>
+    <string name="anime_character_desc">选取有人物正脸的图片识别效果最佳</string>
+    <string name="anime_character_upload_image">上传动漫人物图片</string>
+    <string name="anime_character_upload_limit">文件大小限制为 5MB</string>
+    <string name="anime_character_upload_btn">点击上传</string>
+
+    <string name="anime_character_result_title">动漫人物识别结果</string>
+    <string name="anime_character_result_from">来自：%s</string>
+    <string name="anime_character_result_copy">复制结果</string>
+
+    <string name="anime_gallery_action_save">保存</string>
+    <string name="anime_gallery_action_share">分享</string>
+    <string name="anime_gallery_action_wallpaper">设置为壁纸</string>
+
+    <string name="detect_failed">识别失败，请选择其它图片重试!</string>
+    <string name="anime_character_result_bing">Bing 搜索</string>
+    <string name="anime_search_engine">搜索引擎来自于：%s</string>
+</resources>
