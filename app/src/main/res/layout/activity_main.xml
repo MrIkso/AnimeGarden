@@ -74,7 +74,7 @@
             app:layout_constraintTop_toBottomOf="@+id/iv_logo"
             app:navigationIcon="@drawable/ic_search" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_func"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

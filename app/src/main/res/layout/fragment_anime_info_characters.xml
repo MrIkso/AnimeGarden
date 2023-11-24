@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearance="@style/Theme.AnimeGarden.CornerSmall" />
+        app:shapeAppearance="@style/Theme.AnimeGarden.CornerStartSmall" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_av"
@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearance="@style/Theme.AnimeGarden.CornerSmall" />
+        app:shapeAppearance="@style/Theme.AnimeGarden.CornerEndSmall" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_character_title"

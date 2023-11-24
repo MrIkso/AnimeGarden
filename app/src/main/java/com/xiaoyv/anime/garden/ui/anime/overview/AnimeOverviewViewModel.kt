@@ -1,13 +1,17 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.xiaoyv.anime.garden.ui.anime.overview
 
 import androidx.lifecycle.MutableLiveData
 import com.blankj.utilcode.util.ResourceUtils
 import com.xiaoyv.anime.garden.api.AnimeApiManager
 import com.xiaoyv.anime.garden.api.request.anilist.AnilistGraphqlParam
+import com.xiaoyv.anime.garden.api.request.anilist.AnilistListParam
 import com.xiaoyv.anime.garden.api.request.anilist.AnilistMediaDetailParam
 import com.xiaoyv.anime.garden.api.response.anilist.AnilistMediaEntity
 import com.xiaoyv.anime.garden.kts.GoogleAttr
 import com.xiaoyv.anime.garden.kts.toJsonMap
+import com.xiaoyv.anime.garden.type.AnilistSearchOptions
 import com.xiaoyv.blueprint.base.mvvm.normal.BaseViewModel
 import com.xiaoyv.blueprint.kts.launchUI
 import com.xiaoyv.widget.kts.getAttrColor
@@ -68,28 +72,80 @@ class AnimeOverviewViewModel : BaseViewModel() {
     fun buildOverviewItem(mediaEntity: AnilistMediaEntity): List<AnimeOverviewAdapter.OverviewItemEntity> {
         return mutableListOf(
             AnimeOverviewAdapter.OverviewItemEntity(
-                "Format",
-                mediaEntity.format.orEmpty()
+                name = "Format",
+                AnilistSearchOptions.getOptionName(AnilistListParam::format, mediaEntity.format)
             ),
             AnimeOverviewAdapter.OverviewItemEntity(
-                "Episodes",
+                name = "Episodes",
                 mediaEntity.episodes.toString()
             ),
             AnimeOverviewAdapter.OverviewItemEntity(
-                "Episode Duration",
+                name = "Episode Duration",
                 mediaEntity.duration.toString() + " Min's"
             ),
             AnimeOverviewAdapter.OverviewItemEntity(
-                "Status",
-                mediaEntity.status.orEmpty()
+                name = "Status",
+                AnilistSearchOptions.getOptionName(AnilistListParam::status, mediaEntity.status)
             ),
             AnimeOverviewAdapter.OverviewItemEntity(
-                "Start Date",
+                name = "Start Date",
                 mediaEntity.startDate?.formatLocalDate().orEmpty()
             ),
             AnimeOverviewAdapter.OverviewItemEntity(
-                "End Date",
+                name = "End Date",
                 mediaEntity.endDate?.formatLocalDate().orEmpty()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Season",
+                buildString {
+                    append(
+                        AnilistSearchOptions.getOptionName(
+                            AnilistListParam::season, mediaEntity.season
+                        )
+                    )
+                    append(" ")
+                    append(mediaEntity.seasonYear)
+                }
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Average Score",
+                mediaEntity.averageScore.toString()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Mean Score",
+                mediaEntity.meanScore.toString()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Popularity",
+                mediaEntity.popularity.toString()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Favourites",
+                mediaEntity.favourites.toString()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Studios",
+                mediaEntity.studios?.edges.orEmpty()
+                    .filter { it.isMain }
+                    .joinToString(", ") { it.node?.name.orEmpty() }
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Producers",
+                mediaEntity.studios?.edges.orEmpty()
+                    .filter { !it.isMain }
+                    .joinToString(", ") { it.node?.name.orEmpty() }
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Source",
+                AnilistSearchOptions.getOptionName(AnilistListParam::source, mediaEntity.source)
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Hashtag",
+                mediaEntity.hashtag.orEmpty()
+            ),
+            AnimeOverviewAdapter.OverviewItemEntity(
+                name = "Genres",
+                mediaEntity.genres.orEmpty().joinToString(", ")
             )
         ).apply {
             if (!mediaEntity.isFinished) {
@@ -101,6 +157,6 @@ class AnimeOverviewViewModel : BaseViewModel() {
                     )
                 )
             }
-        }
+        }.filter { it.value.isNotBlank() }
     }
 }

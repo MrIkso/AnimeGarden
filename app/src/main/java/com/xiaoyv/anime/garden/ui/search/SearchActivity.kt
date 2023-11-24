@@ -27,6 +27,8 @@ abstract class SearchActivity<ItemEntity, ViewModel : SearchViewModel<ItemEntity
 
     abstract val contentAdapter: BaseQuickDiffBindingAdapter<ItemEntity, *>
 
+    internal val keyword get() = binding.etName.text.toString().trim()
+
     private val adapterHelper: QuickAdapterHelper by lazy {
         QuickAdapterHelper.Builder(contentAdapter)
             .setTrailingLoadStateAdapter(object : TrailingLoadStateAdapter.OnTrailingListener {
@@ -43,7 +45,7 @@ abstract class SearchActivity<ItemEntity, ViewModel : SearchViewModel<ItemEntity
                         return false
                     }
 
-                    if (allowEmptyKeyword().not() && binding.etName.text.toString().isBlank()) {
+                    if (allowEmptyKeyword().not() && keyword.isBlank()) {
                         return false
                     }
 
@@ -96,6 +98,10 @@ abstract class SearchActivity<ItemEntity, ViewModel : SearchViewModel<ItemEntity
         viewModel.onListLiveData.observe(this) {
             contentAdapter.submitList(it) {
                 adapterHelper.trailingLoadState = viewModel.loadingMoreState
+
+                if (viewModel.isRefresh && it.isEmpty()) {
+                    onEmptyResult()
+                }
             }
         }
     }
@@ -106,9 +112,12 @@ abstract class SearchActivity<ItemEntity, ViewModel : SearchViewModel<ItemEntity
 
     abstract fun allowEmptyKeyword(): Boolean
 
+    open fun onEmptyResult() {
+
+    }
+
     @CallSuper
     open fun onRefreshList() {
-        val keyword = binding.etName.text.toString()
         if (keyword.isBlank() && !allowEmptyKeyword()) {
             binding.srlRefresh.isRefreshing = false
             return

@@ -5,7 +5,7 @@ import com.blankj.utilcode.util.StringUtils
 import com.xiaoyv.anime.garden.R
 
 /**
- * AnimeGardenMagnetType
+ * Class: [AnimeGardenMagnetType]
  *
  * @author why
  * @since 11/18/23

@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.lifecycle.LifecycleOwner
 import com.google.android.material.tabs.TabLayoutMediator
+import com.xiaoyv.anime.garden.api.response.anilist.AnilistMediaEntity
 import com.xiaoyv.anime.garden.databinding.ActivityAnimeInfoBinding
 import com.xiaoyv.anime.garden.kts.initNavBack
 import com.xiaoyv.anime.garden.kts.loadImageAnimate
 import com.xiaoyv.blueprint.base.mvvm.normal.BaseViewModelActivity
 import com.xiaoyv.blueprint.constant.NavKey
+import com.xiaoyv.blueprint.kts.open
 import com.xiaoyv.widget.kts.getParcelObj
 import kotlin.math.abs
 
@@ -74,5 +76,17 @@ class AnimeInfoActivity : BaseViewModelActivity<ActivityAnimeInfoBinding, AnimeI
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         item.initNavBack(this)
         return super.onOptionsItemSelected(item)
+    }
+
+    companion object {
+        @JvmStatic
+        fun openSelf(animeId: Long) {
+            AnimeInfoActivity::class.open(paramLong1 = animeId)
+        }
+
+        @JvmStatic
+        fun openSelf(anime: AnilistMediaEntity) {
+            AnimeInfoActivity::class.open(paramParcelable1 = anime)
+        }
     }
 }

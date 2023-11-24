@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.xiaoyv.anime.garden.view.fuckmi.AnimeNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurfaceVariant"
+    android:overScrollMode="never"
     tools:context=".ui.anime.AnimeInfoActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_overview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,10 +26,35 @@
             android:focusableInTouchMode="true"
             android:nestedScrollingEnabled="false"
             android:orientation="horizontal"
-            android:paddingHorizontal="@dimen/ui_size_8"
-            android:paddingVertical="@dimen/ui_size_12"
+            android:paddingHorizontal="@dimen/ui_size_4"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/fragment_anime_info_overview_item" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_names_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ui_layout_margin"
+            android:layout_marginTop="@dimen/ui_layout_margin"
+            android:text="Titles"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_names_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ui_layout_margin"
+            android:layout_marginTop="@dimen/ui_size_12"
+            android:background="@drawable/ui_shape_rectangle_corner_6"
+            android:backgroundTint="?attr/colorOnSurfaceInverse"
+            android:ellipsize="end"
+            android:paddingHorizontal="@dimen/ui_layout_margin"
+            android:paddingVertical="@dimen/ui_layout_margin"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            tools:lines="3"
+            tools:text="@tools:sample/lorem/random" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_description_title"
@@ -50,8 +76,9 @@
             android:backgroundTint="?attr/colorOnSurfaceInverse"
             android:ellipsize="end"
             android:paddingHorizontal="@dimen/ui_layout_margin"
-            android:paddingVertical="@dimen/ui_size_12"
+            android:paddingVertical="@dimen/ui_layout_margin"
             android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
             tools:lines="3"
             tools:text="@tools:sample/lorem/random" />
 
@@ -65,7 +92,7 @@
             android:textAppearance="?attr/textAppearanceTitleSmall"
             android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_relations"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,7 +117,7 @@
             android:textAppearance="?attr/textAppearanceTitleSmall"
             android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_characters"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +142,7 @@
             android:textAppearance="?attr/textAppearanceTitleSmall"
             android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_staffs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -130,4 +157,4 @@
             tools:itemCount="1"
             tools:listitem="@layout/fragment_anime_info_staff" />
     </androidx.appcompat.widget.LinearLayoutCompat>
-</androidx.core.widget.NestedScrollView>
+</com.xiaoyv.anime.garden.view.fuckmi.AnimeNestedScrollView>

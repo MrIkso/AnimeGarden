@@ -23,7 +23,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
         android:id="@+id/rv_items"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +32,5 @@
         android:paddingVertical="@dimen/ui_size_6"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        tools:listitem="@layout/activity_anime_detect_result_item">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        tools:listitem="@layout/activity_anime_detect_result_item"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

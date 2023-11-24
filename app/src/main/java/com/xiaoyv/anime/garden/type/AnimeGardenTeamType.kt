@@ -8,7 +8,7 @@ import com.google.gson.reflect.TypeToken
 
 
 /**
- * AnimeGardenTeamType
+ * Class: [AnimeGardenTeamType]
  *
  * @author why
  * @since 11/18/23

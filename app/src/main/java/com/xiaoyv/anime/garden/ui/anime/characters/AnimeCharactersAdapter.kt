@@ -2,6 +2,7 @@
 
 package com.xiaoyv.anime.garden.ui.anime.characters
 
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import com.xiaoyv.anime.garden.api.response.anilist.AnilistCharacterEntity
 import com.xiaoyv.anime.garden.databinding.FragmentAnimeInfoCharactersBinding
@@ -29,6 +30,8 @@ class AnimeCharactersAdapter :
 
         binding.tvCharacterTitle.text = media?.name?.userPreferred.orEmpty()
         binding.tvCharacterDesc.text = item.role.orEmpty()
+
+        binding.ivAv.isVisible = voiceActor != null
         binding.tvAvTitle.text = voiceActor?.name?.userPreferred.orEmpty()
         binding.tvAvDesc.text = voiceActor?.language.orEmpty()
     }

@@ -18,13 +18,14 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:popupTheme="@style/Theme.AnimeGarden.PopupOverlay"
             app:title="Search"
             app:titleTextAppearance="@style/Theme.AnimeGarden.ToolbarTitle" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/ui_size_16">
+            android:layout_marginHorizontal="@dimen/ui_layout_margin">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_name"
@@ -90,7 +91,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <com.xiaoyv.anime.garden.view.fuckmi.AnimeRecyclerView
             android:id="@+id/rv_items"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -100,5 +101,4 @@
             tools:itemCount="10"
             tools:listitem="@layout/view_magnet_item" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

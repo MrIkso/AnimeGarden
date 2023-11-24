@@ -17,5 +17,11 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class AnilistNameEntity(
     @SerializedName("userPreferred")
-    var userPreferred: String? = null
+    var userPreferred: String? = null,
+    @SerializedName("romaji")
+    var romaji: String? = null,
+    @SerializedName("english")
+    var english: String? = null,
+    @SerializedName("native")
+    var native: String? = null,
 ) : Parcelable

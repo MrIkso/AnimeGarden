@@ -41,7 +41,7 @@ data class AnilistMediaEntity(
     @SerializedName("format")
     var format: String? = null,
     @SerializedName("genres")
-    var genres: List<String?>? = null,
+    var genres: List<String>? = null,
     @SerializedName("id")
     var id: Long = 0,
     @SerializedName("isAdult")

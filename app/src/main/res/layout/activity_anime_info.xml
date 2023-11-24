@@ -105,6 +105,7 @@
         android:layout_height="@dimen/ui_size_150"
         android:layout_marginStart="@dimen/ui_layout_margin"
         android:background="?attr/colorOnSurfaceInverse"
+        android:elevation="@dimen/ui_layout_elevation"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|start" />
 

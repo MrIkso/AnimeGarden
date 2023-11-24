@@ -4,7 +4,7 @@ import androidx.annotation.StringDef
 import com.xiaoyv.anime.garden.R
 
 /**
- * AnimeGardenSortType
+ * Class: [AnimeGardenSortType]
  *
  * @author why
  * @since 11/19/23

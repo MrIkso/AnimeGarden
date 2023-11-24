@@ -47,7 +47,7 @@ class AnimeDetectResultActivity :
     override fun initListener() {
         itemAdapter.addOnItemChildClickListener(R.id.item_card) { adapter, _, position ->
             val item = adapter.getItem(position) ?: return@addOnItemChildClickListener
-            AnimeInfoActivity::class.open(paramLong1 = item.anilist)
+            AnimeInfoActivity.openSelf(item.anilist)
         }
     }
 

@@ -3,7 +3,7 @@ package com.xiaoyv.anime.garden.type
 import androidx.annotation.IntDef
 
 /**
- * MainFuncType
+ * Class: [MainFuncType]
  *
  * @author why
  * @since 11/18/23

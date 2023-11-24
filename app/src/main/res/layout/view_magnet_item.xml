@@ -9,7 +9,7 @@
         android:id="@+id/item_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/ui_size_16"
+        android:layout_marginHorizontal="@dimen/ui_layout_margin"
         android:layout_marginVertical="@dimen/ui_size_6"
         android:clickable="true"
         android:focusable="true"
